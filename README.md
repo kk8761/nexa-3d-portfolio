@@ -1,4 +1,4 @@
-Since you are currently in the GitHub editor for your `nexa-3d-portfolio` repository, you can copy the content below and paste it directly into the editor. I have structured it to highlight the 3D nature of your portfolio and included a section for your live site.
+
 
 ***
 
@@ -61,4 +61,4 @@ Feel free to reach out if you have any questions or just want to connect!
 
 
 
-Would you like me to add any specific sections, such as a "License" or "Roadmap," to this file?
+
