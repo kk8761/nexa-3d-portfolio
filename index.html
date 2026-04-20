@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karri Karthik Reddy | 3D Portfolio</title>
+    <meta name="description" content="Portfolio of Karri Karthik Reddy - CSE Undergraduate at SRM IST. Full-Stack Developer, AI Enthusiast, and AWS/SAP Certified.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Three.js Canvas Container -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Overlay UI -->
+    <main id="app">
+        <!-- Hero Section -->
+        <section id="hero" class="v-section">
+            <div class="content glass hero-flex">
+                <div class="profile-container">
+                    <img src="https://github.com/kk8761.png" alt="Karri Karthik Reddy" onerror="this.src='assets/profile.jpg'" class="profile-img">
+                </div>
+                <div class="hero-text">
+                    <h1 class="glitch" data-content="KARTHIK REDDY">KARTHIK REDDY</h1>
+                    <p class="subtitle">Full-Stack Dev | AI Engineer | SAP & AWS Certified</p>
+                    <div class="cta-group">
+                        <a href="assets/resume.pdf" download class="btn primary">Download Resume (PDF)</a>
+                        <a href="https://github.com/kk8761" target="_blank" class="btn secondary">GitHub Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/Resume Section -->
+        <section id="about" class="v-section">
+            <div class="content glass-card list-container">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                    <h2>Education & Certs</h2>
+                    <a href="assets/resume.pdf" download class="btn secondary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Download PDF</a>
+                </div>
+                <div class="resume-item">
+                    <span class="date">2023 - 2027 (Expected)</span>
+                    <h3>B.Tech, Computer Science & Engineering</h3>
+                    <p>SRM IST-Kattankulathur | CGPA: 7.51/10</p>
+                </div>
+                <div class="resume-item">
+                    <span class="date">Certifications</span>
+                    <h3>AWS & SAP Certified</h3>
+                    <p>SAP Certified Gen AI Developer | AWS AI & Cloud Practitioner</p>
+                </div>
+                <div class="resume-item">
+                    <span class="date">2021 - 2023</span>
+                    <h3>Narayana Junior College</h3>
+                    <p>Class XII - CBSE | 85.9%</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="v-section">
+            <div class="content glass-card project-container">
+                <h2>Featured Projects</h2>
+                <div class="project-list">
+                    <div class="project-entry">
+                        <h3>ThereminMuse</h3>
+                        <p>Real-time collaborative music platform using Theremin as primary input. Deployed autonomously via AgenticStudio.</p>
+                        <a href="https://github.com/kk8761/theremin-muse" target="_blank" class="p-link">View Repository →</a>
+                    </div>
+                    <div class="project-entry">
+                        <h3>Nexa Chat</h3>
+                        <p>Real-time chat platform with Socket.io, Node.js, and MongoDB. Premium glassmorphism UI.</p>
+                        <a href="https://stunning-cassata-3160d6.netlify.app/" target="_blank" class="p-link">Live Demo →</a>
+                    </div>
+                    <div class="project-entry">
+                        <h3>AgenticStudio</h3>
+                        <p>Autonomous AI dev team system that scaffolds and deploys full-stack apps to GitHub.</p>
+                        <a href="https://github.com/kk8761/AgenticStudio" target="_blank" class="p-link">Source Code →</a>
+                    </div>
+                    <div class="project-entry">
+                        <h3>ExamGPT</h3>
+                        <p>AI-powered exam assistant using Gemini API to generate notes and custom roadmaps.</p>
+                        <a href="https://github.com/kk8761" target="_blank" class="p-link">Explore Repo →</a>
+                    </div>
+                    <div class="project-entry">
+                        <h3>AI Rehab Support</h3>
+                        <p>Full-stack healthcare platform for patient-doctor interaction and exercise tracking.</p>
+                        <a href="https://rehabai-04.netlify.app/" target="_blank" class="p-link">Live Demo →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="v-section">
+            <div class="content glass-card grid-container">
+                <h2>Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-tag">Python & C++</div>
+                    <div class="skill-tag">Node.js / Express</div>
+                    <div class="skill-tag">Socket.io</div>
+                    <div class="skill-tag">SAP AI Core</div>
+                    <div class="skill-tag">AWS Cloud</div>
+                    <div class="skill-tag">MongoDB</div>
+                    <div class="skill-tag">React & Vite</div>
+                    <div class="skill-tag">Three.js</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="v-section">
+            <div class="content glass-card form-container">
+                <h2>Get In Touch</h2>
+                <p style="margin-bottom: 1.5rem; opacity: 0.7;">Email: kk8761@srmist.edu.in | karthikkari2005@gmail.com</p>
+                <form id="contact-form" action="https://formspree.io/f/mlgalzbk" method="POST">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Let's build something amazing..."></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.170.0/three.module.min.js"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
